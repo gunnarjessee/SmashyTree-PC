@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
             if (tile.tag.Equals("GrassTile"))
             {
                 selectedObject = tile.gameObject;
+                selectedObject.GetComponent<GrassTile>().OnClick();
             }
         }
     }
