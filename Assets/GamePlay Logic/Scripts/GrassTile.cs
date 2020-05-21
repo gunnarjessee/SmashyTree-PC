@@ -7,6 +7,7 @@ public class GrassTile : MonoBehaviour
 
     private Vector3 _position;
     private Vector3 _offsetPosition;
+    [SerializeField]
     private float offsetValue = .25f;
 
     private bool hasTree = false;
