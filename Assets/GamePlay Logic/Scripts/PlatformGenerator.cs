@@ -17,7 +17,7 @@ public class PlatformGenerator : MonoBehaviour
     public int length;
     public int xOffset;
     public int yOffset;
-
+    public float randomYOffset = .25f;
     private GameObject[,] grid;
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class PlatformGenerator : MonoBehaviour
                 GameObject obj = Instantiate(prefab);
                 obj.transform.parent = transform;
                 obj.name = (x + "," + y);
-                obj.transform.position = new Vector3(x * xOffset, Random.Range(-.5f, .5f), y * yOffset);
+                obj.transform.position = new Vector3(x * xOffset, Random.Range(-randomYOffset, randomYOffset), y * yOffset);
             }
         }
     }
