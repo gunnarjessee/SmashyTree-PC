@@ -290,13 +290,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.29437745, y: 0.004871363, z: -0.0015027509, w: -0.95567566}
-  m_LocalPosition: {x: 4.5581703, y: 9.645157, z: -7.2537775}
+  m_LocalRotation: {x: 0.29438218, y: 0, z: 0, w: 0.95568776}
+  m_LocalPosition: {x: 4.6, y: 8.8, z: -7.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 34.241, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 1205132165}
   - component: {fileID: 1205132164}
   m_Layer: 0
-  m_Name: StartTransform
+  m_Name: Platform Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,8 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1000284511460093506, guid: 9d08c7270c1fd6e4ea3970c8b6ac73b8, type: 3}
-  width: 10
-  length: 5
+  width: 15
+  length: 10
   xOffset: 1
   yOffset: 1
   randomYOffset: 0.25

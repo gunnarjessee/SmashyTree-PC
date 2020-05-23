@@ -37,6 +37,12 @@ public class PlatformGenerator : MonoBehaviour
                 obj.transform.parent = transform;
                 obj.name = (x + "," + y);
                 obj.transform.position = new Vector3(x * xOffset, Random.Range(-randomYOffset, randomYOffset), y * yOffset);
+                GrassTile tile = obj.GetComponent<GrassTile>();
+                int randomInt = Random.Range(1, 10);
+                if (randomInt == 3)
+                {
+                    tile.ToggleTree();
+                }
             }
         }
     }
