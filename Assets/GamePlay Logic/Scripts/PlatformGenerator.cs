@@ -23,12 +23,14 @@ public class PlatformGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GenerateGrid();        
     }
 
     // Generates a tiled grid based on length, width, and offsets
     private void GenerateGrid()
     {
+        grid = new GameObject[width, length];
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < length; y++)
@@ -37,6 +39,8 @@ public class PlatformGenerator : MonoBehaviour
                 obj.transform.parent = transform;
                 obj.name = (x + "," + y);
                 obj.transform.position = new Vector3(x * xOffset, Random.Range(-randomYOffset, randomYOffset), y * yOffset);
+                grid[x, y] = obj;
+
                 GrassTile tile = obj.GetComponent<GrassTile>();
                 int randomInt = Random.Range(1, 10);
                 if (randomInt == 3)
